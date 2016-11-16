@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.DataContracts;
 using Microsoft.ApplicationInsights.Extensibility;
-using webrtc_winrt_api;
+using Org.WebRtc;
 
 namespace ChatterBox.Background
 {

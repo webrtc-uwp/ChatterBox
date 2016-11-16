@@ -18,7 +18,7 @@ using ChatterBox.Background.Call.Utils;
 using ChatterBox.Background.Settings;
 using ChatterBox.Communication.Messages.Relay;
 using Newtonsoft.Json;
-using webrtc_winrt_api;
+using Org.WebRtc;
 
 #pragma warning disable 1998
 
@@ -174,7 +174,7 @@ namespace ChatterBox.Background.Call.States
             var sdpOffer = await Context.PeerConnection.CreateOffer();
             var sdpString = sdpOffer.Sdp;
 
-            webrtc_winrt_api.CodecInfo videoCodecToUse = null;
+            Org.WebRtc.CodecInfo videoCodecToUse = null;
             // In case of camera switch, try to use the codec from the call's first SDP negotiation.
             if (_reason == Reason.SwitchCamera && Context.VideoCodecUsed != null)
             {

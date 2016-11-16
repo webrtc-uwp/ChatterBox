@@ -19,15 +19,15 @@ using ChatterBox.Background.AppService;
 using ChatterBox.Background.AppService.Dto;
 using ChatterBox.Background.Call.Utils;
 using ChatterBox.Background.Settings;
-using webrtc_winrt_api;
+using Org.WebRtc;
 using DtoMediaDevice = ChatterBox.Background.AppService.Dto.MediaDevice;
 using DtoMediaDevices = ChatterBox.Background.AppService.Dto.MediaDevices;
 using DtoCodecInfo = ChatterBox.Background.AppService.Dto.CodecInfo;
 using DtoCodecInfos = ChatterBox.Background.AppService.Dto.CodecInfos;
 using DtoVideoCaptureFormat = ChatterBox.Background.AppService.Dto.VideoCaptureFormat;
 using DtoStatsConfig = ChatterBox.Background.AppService.Dto.StatsConfig;
-using WebRTCMedia = webrtc_winrt_api.Media;
-using WebRTCCapability = webrtc_winrt_api.CaptureCapability;
+using WebRTCMedia = Org.WebRtc.Media;
+using WebRTCCapability = Org.WebRtc.CaptureCapability;
 
 namespace ChatterBox.Background.Call
 {

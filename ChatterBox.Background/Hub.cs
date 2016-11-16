@@ -24,7 +24,7 @@ using ChatterBox.Background.Signaling;
 using ChatterBox.Background.Tasks;
 using ChatterBox.Communication.Contracts;
 using ChatterBox.Communication.Messages.Relay;
-using webrtc_winrt_api;
+using Org.WebRtc;
 
 namespace ChatterBox.Background
 {

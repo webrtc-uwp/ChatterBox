@@ -16,7 +16,7 @@ using ChatterBox.Background.AppService.Dto;
 using ChatterBox.Background.Signaling.Dto;
 using ChatterBox.Communication.Messages.Relay;
 using Newtonsoft.Json;
-using webrtc_winrt_api;
+using Org.WebRtc;
 
 #pragma warning disable 1998
 

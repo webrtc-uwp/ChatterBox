@@ -16,8 +16,8 @@ using Windows.Graphics.Display;
 using Windows.Storage;
 using ChatterBox.Background.AppService.Dto;
 using ChatterBox.Background.Settings;
-using webrtc_winrt_api;
-using WebRTCMedia = webrtc_winrt_api.Media;
+using Org.WebRtc;
+using WebRTCMedia = Org.WebRtc.Media;
 
 namespace ChatterBox.Background.Call
 {

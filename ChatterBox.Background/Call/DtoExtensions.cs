@@ -12,7 +12,7 @@
 using System.Linq;
 using Windows.Media.MediaProperties;
 using ChatterBox.Background.Signaling.Dto;
-using webrtc_winrt_api;
+using Org.WebRtc;
 using DtoMediaDevice = ChatterBox.Background.AppService.Dto.MediaDevice;
 using DtoMediaDeviceLocation = ChatterBox.Background.AppService.Dto.MediaDeviceLocation;
 using DtoMediaDevices = ChatterBox.Background.AppService.Dto.MediaDevices;

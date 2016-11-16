@@ -26,7 +26,7 @@ using ChatterBox.Background.Call.Utils;
 using ChatterBox.Background.Notifications;
 using ChatterBox.Background.Settings;
 using ChatterBox.Communication.Messages.Relay;
-using webrtc_winrt_api;
+using Org.WebRtc;
 using ChatterBoxClient.Universal.BackgroundRenderer;
 
 #pragma warning disable 4014
@@ -234,7 +234,7 @@ namespace ChatterBox.Background.Call
         public Renderer LocalVideoRenderer { get; private set; }
 
         public MediaStream RemoteStream { get; set; }
-        public webrtc_winrt_api.CodecInfo VideoCodecUsed { get; set; }
+        public Org.WebRtc.CodecInfo VideoCodecUsed { get; set; }
         public Size RemoteVideoControlSize { get; set; }
         public Renderer RemoteVideoRenderer { get; private set; }
 
