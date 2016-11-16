@@ -221,6 +221,10 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\webrtc\windows\projects\msvc\webrtc_winrt_api.Universal\webrtc_winrt_api.vcxproj">
+      <Project>{32a4abd8-eb1c-4198-b261-425e6caddbef}</Project>
+      <Name>webrtc_winrt_api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ChatterBox.Communication\ChatterBox.Communication.csproj">
       <Project>{724446B9-496E-4B7A-B944-0F79ECDE77F0}</Project>
       <Name>ChatterBox.Communication</Name>
