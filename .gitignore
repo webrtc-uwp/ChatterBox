@@ -15,3 +15,4 @@ project.lock.json
 *.vcxproj.user
 *.csproj.user
 *.opendb
+Output/
