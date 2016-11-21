@@ -588,7 +588,7 @@ namespace ChatterBox.ViewModels
             var audioCodecList = await _mediaSettings.GetAudioCodecsAsync();
             foreach (var audioCodec in audioCodecList.Codecs)
             {
-                if (!_incompatibleAudioCodecs.Contains(audioCodec.Name + audioCodec.Clockrate))
+                if (!_incompatibleAudioCodecs.Contains(audioCodec.Name + audioCodec.ClockRate))
                 {
                     AudioCodecs.Add(audioCodec);
                 }

@@ -16,7 +16,7 @@ namespace ChatterBox.Background.AppService.Dto
     public sealed class CodecInfo
     {
         [DataMember]
-        public int Clockrate { get; set; }
+        public int ClockRate { get; set; }
 
         [DataMember]
         public int Id { get; set; }

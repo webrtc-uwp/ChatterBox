@@ -63,7 +63,7 @@ namespace ChatterBox.Background.Call
         {
             if (obj == null)
                 return null;
-            return new CodecInfo(obj.Id, obj.Clockrate, obj.Name);
+            return new CodecInfo(obj.Id, obj.ClockRate, obj.Name);
         }
 
         public static CodecInfo[] FromDto(this DtoCodecInfos obj)
@@ -138,7 +138,7 @@ namespace ChatterBox.Background.Call
             {
                 Id = obj.Id,
                 Name = obj.Name,
-                Clockrate = obj.Clockrate
+                ClockRate = obj.ClockRate
             };
         }
 
