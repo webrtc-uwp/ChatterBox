@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatterBox.Server", "ChatterBox.Server\ChatterBox.Server.csproj", "{6B237D83-603C-42AF-AABE-9A8013EF1805}"
 EndProject
@@ -26,8 +26,8 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ChatterBox.Communication.Shared\ChatterBox.Communication.Shared.projitems*{6b237d83-603c-42af-aabe-9a8013ef1805}*SharedItemsImports = 4
-		ChatterBox.Communication.Shared\ChatterBox.Communication.Shared.projitems*{7fba9ac3-a3e4-4c99-9c3b-f1c76bf2ff59}*SharedItemsImports = 13
 		ChatterBox.Communication.Shared\ChatterBox.Communication.Shared.projitems*{724446b9-496e-4b7a-b944-0f79ecde77f0}*SharedItemsImports = 4
+		ChatterBox.Communication.Shared\ChatterBox.Communication.Shared.projitems*{7fba9ac3-a3e4-4c99-9c3b-f1c76bf2ff59}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -39,11 +39,13 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Debug|ARM.ActiveCfg = Debug|x86
+		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Debug|ARM.Build.0 = Debug|x86
 		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Debug|x64.ActiveCfg = Debug|x64
 		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Debug|x64.Build.0 = Debug|x64
 		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Debug|x86.ActiveCfg = Debug|x86
 		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Debug|x86.Build.0 = Debug|x86
 		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Release|ARM.ActiveCfg = Release|x86
+		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Release|ARM.Build.0 = Release|x86
 		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Release|x64.ActiveCfg = Release|x64
 		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Release|x64.Build.0 = Release|x64
 		{6B237D83-603C-42AF-AABE-9A8013EF1805}.Release|x86.ActiveCfg = Release|x86
