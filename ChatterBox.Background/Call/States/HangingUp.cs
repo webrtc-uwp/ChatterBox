@@ -33,11 +33,11 @@ namespace ChatterBox.Background.Call.States
             }
 
             StopTracks(Context.LocalStream?.GetTracks());
-            Context.LocalStream?.Stop();
+            Context.StopStream(Context.LocalStream);
             Context.LocalStream = null;
 
             StopTracks(Context.RemoteStream?.GetTracks());
-            Context.RemoteStream?.Stop();
+            Context.StopStream(Context.RemoteStream);
             Context.RemoteStream = null;
 
             Context.ResetRenderers();

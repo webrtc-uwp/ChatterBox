@@ -230,6 +230,19 @@ namespace ChatterBox.Background.Call
                 ApplyVideoConfig();
             }
         }
+
+        public void StopStream(MediaStream stream)
+        {
+            if (stream != null)
+            {
+                foreach (var track in stream.GetTracks())
+                {
+                    stream.RemoveTrack(track);
+                    track.Stop();
+                }
+            }
+        }
+
         public Size LocalVideoControlSize { get; set; }
         public Renderer LocalVideoRenderer { get; private set; }
 

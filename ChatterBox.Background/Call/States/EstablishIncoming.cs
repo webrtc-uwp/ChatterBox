@@ -71,9 +71,9 @@ namespace ChatterBox.Background.Call.States
                 {
                     Context.PeerConnection.RemoveStream(Context.LocalStream);
                 }
-                Context.LocalStream?.Stop();
+                Context.StopStream(Context.LocalStream);
                 Context.LocalStream = null;
-                Context.RemoteStream?.Stop();
+                Context.StopStream(Context.RemoteStream);
                 Context.RemoteStream = null;
                 Context.ResetRenderers();
             }

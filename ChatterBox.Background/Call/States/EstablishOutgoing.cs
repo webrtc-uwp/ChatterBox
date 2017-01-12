@@ -91,9 +91,9 @@ namespace ChatterBox.Background.Call.States
                         Debug.WriteLine("Streams remaining.");
                     }
 
-                    Context.LocalStream?.Stop();
+                    Context.StopStream(Context.LocalStream);
                     Context.LocalStream = null;
-                    Context.RemoteStream?.Stop();
+                    Context.StopStream(Context.RemoteStream);
                     Context.RemoteStream = null;
                     Context.ResetRenderers();
                     break;
@@ -101,9 +101,9 @@ namespace ChatterBox.Background.Call.States
 
                 case Reason.EstablishCall:
                 {
-                    Context.LocalStream?.Stop();
+                    Context.StopStream(Context.LocalStream);
                     Context.LocalStream = null;
-                    Context.RemoteStream?.Stop();
+                    Context.StopStream(Context.RemoteStream);
                     Context.RemoteStream = null;
                     Context.ResetRenderers();
 
@@ -163,7 +163,7 @@ namespace ChatterBox.Background.Call.States
                     Context.LocalStream.AddTrack(newVideoTrack);
 
                     newStream.RemoveTrack(newVideoTrack);
-                    newStream.Stop();
+                    Context.StopStream(newStream);
 
                     var source = RtcManager.Instance.Media.CreateMediaSource(newVideoTrack, CallContext.LocalMediaStreamId);
                     Context.LocalVideoRenderer.SetupRenderer(Context.ForegroundProcessId, source, Context.LocalVideoControlSize);
